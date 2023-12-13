@@ -1,0 +1,67 @@
+:root {
+    --cor-primaria: #ff0000; /* Red */
+    --cor-secundaria: #000; /* Black */
+    --cor-fundo: #333; /* Dark Gray */
+    --cor-texto: #fff; /* White */
+  }
+  
+  body {
+    font-family: 'Nova Square', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 20px;
+  }
+  
+  header {
+    text-align: center;
+    background-color: var(--cor-primaria);
+    padding: 10px;
+    color: var(--cor-texto);
+  }
+  
+  #DHTSensor, #Lamps{
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  h3 {
+    color: var(--cor-primaria);
+  }
+  
+  label {
+    color: var(--cor-primaria);
+  }
+  
+  #temperature_reading, #humidity_reading {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-primaria);
+  }
+  
+  #button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #lamp_1_toggle, #lamp_2_toggle, #fan_toggle {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for buttons */
+  #lamp_1_toggle:hover, #lamp_2_toggle:hover, #fan_toggle:hover {
+    background-color: #111; /* Dark color for hover effect */
+  }

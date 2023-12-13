@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<script src='jquery-3.3.1.min.js'></script>
+		<link rel="stylesheet" href="app.css">
+		<script async src="app.js"></script>
+		<title>SENAI Smart House</title>
+	</head>
+	<body>
+	<header>
+		<h1>SENAI Smart House</h1>
+	</header>
+	<hr>
+	<div id="DHTSensor">
+		<h3>Sala de Estar - Condições Ambiente</h3>
+		<label for="temperature_reading"> Temperature: </label>
+		<div id="temperature_reading"></div>
+		<label for="humidity_reading"> Humidity: </label>
+		<div id="humidity_reading"></div>
+	</div>
+	<hr>
+	<div id="Lâmpadas">
+		<h3>Sala de Estar - Iluminação</h3>
+		<div class="buttons">
+			<label id="button">Lâmpada 1</label>
+			<input type="button" id="lamp_1_toggle" data-device-index="0" />
+			<label id="button">Lâmpada 2</label>
+			<input type="button" id="lamp_2_toggle" data-device-index="1" />
+			<label id="button">Ventilador</label>
+			<input type="button" id="fan_toggle" data-device-index="2" />			
+		</div>
+	</div>
+	<hr>
+	</body>
+<html>
